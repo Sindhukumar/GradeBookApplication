@@ -12,8 +12,7 @@ public class GradeBookApplication {
 	major=new String[Max];
 	stateOfOrigin=new String[Max];
 	score = new double[Max];
-	boolean hasMore=true;
-	int count=0,oCount=0, mCount=0, fCount=0, mdCount=0, dcCount=0, vaCount=0, eConCount=0, comSciCount=0, eeCount=0;
+	int count=0, mCount=0, fCount=0, mdCount=0, dcCount=0, vaCount=0, eConCount=0, comSciCount=0, eeCount=0;
 	double oSum=0, mSum=0, fSum=0, mdSum=0, dcSum=0, vaSum=0, eConSum=0, comSciSum=0, eeSum=0; 
 	Scanner sc = new Scanner(System.in);
 	while(true){
@@ -76,7 +75,7 @@ public class GradeBookApplication {
 	System.out.println("Male: "+(mSum/(mCount==0?1:mCount)));
 	System.out.println("Female: "+(fSum/(fCount==0?1:fCount)));
 	System.out.println("\nAverage for Major");
-	System.out.println("Econ: "+(eConCount/(eConCount==0?1:eConCount)));
+	System.out.println("Econ: "+(eConSum/(eConCount==0?1:eConCount)));
 	System.out.println("CompSci: "+(comSciSum/(comSciCount==0?1:comSciCount)));
 	System.out.println("EE: "+(eeSum/(eeCount==0?1:eeCount)));
 	System.out.println("\nAverage by State");
